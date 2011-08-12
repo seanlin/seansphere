@@ -2,6 +2,7 @@
 title: Django without Xcode
 tags: Django, Python, HomeBrew
 date: 12/08/2011
+description: Setting up Python, Django and HomeBrew on Mac without XCode
 
 It's ridiculous that Mac's users have to download and install XCode just to properly install and setup Python and Django development environment. Below are the steps that you can follow to get environment for Django up and running in no time without XCode.
 
