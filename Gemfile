@@ -7,5 +7,5 @@ gem "coderay"
 gem "rack-codehighlighter", :git => 'https://github.com/wbzyl/rack-codehighlighter.git'
 
 group :production do
-  gem 'newrelic'
+  gem 'newrelic_rpm'
 end
