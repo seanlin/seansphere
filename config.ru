@@ -5,6 +5,9 @@ require 'toto'
 require 'coderay'
 require 'rack/codehighlighter'
 
+configure :production do
+  require 'newrelic_rpm'
+end
 
 # Rack config
 
