@@ -4,7 +4,7 @@ Bundler.require
 require 'toto'
 require 'coderay'
 require 'rack/codehighlighter'
-require 'newrelic_rpm'
+
 
 
 # Rack config
