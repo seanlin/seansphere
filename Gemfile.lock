@@ -7,6 +7,14 @@ GIT
       rack
       rdiscount
 
+GIT
+  remote: https://github.com/wbzyl/rack-codehighlighter.git
+  revision: 8160893529c68cb7692dc60f6a9140d8e46648cf
+  specs:
+    rack-codehighlighter (0.5.0)
+      nokogiri (>= 1.4.1)
+      rack (>= 1.0.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -14,9 +22,6 @@ GEM
     coderay (0.9.8)
     nokogiri (1.5.0)
     rack (1.3.2)
-    rack-codehighlighter (0.5.0)
-      nokogiri (>= 1.4.1)
-      rack (>= 1.0.0)
     rdiscount (1.6.8)
 
 PLATFORMS
@@ -25,6 +30,6 @@ PLATFORMS
 DEPENDENCIES
   builder
   coderay
-  rack-codehighlighter
+  rack-codehighlighter!
   rdiscount
   toto!
