@@ -4,10 +4,8 @@ Bundler.require
 require 'toto'
 require 'coderay'
 require 'rack/codehighlighter'
+require 'newrelic_rpm'
 
-configure :production do
-  require 'newrelic_rpm'
-end
 
 # Rack config
 
