@@ -4,8 +4,9 @@
   font-family: 'Courier New', 'Terminal', monospace;
   color: #000;
   line-height: 18px;
-  padding:0px;
+  padding:5px;
   font-size:85%;
+  border-radius:5px;
 }
 .CodeRay pre { margin: 0px; }
 pre.CodeRay { margin: 0px }

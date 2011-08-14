@@ -6,8 +6,6 @@ description: Setting up Python, Django and HomeBrew on Mac
 
 Below are the steps that you can follow to get environment for Django up and running in no time.
 
-~
-
 The environment will contain -
 
 * Python 2.7
@@ -18,6 +16,8 @@ The environment will contain -
 * Pip - Package install for Python
 * PIL - Python Imaging Library
 * Virtualenv - virtual environment for Python
+
+~
 
 
 ### Installing HomeBrew

@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/seanlin/toto.git
-  revision: c8622d556b9d262d0005b9cf12b5a10194827c54
+  revision: 25e786ef07aa7c806f302873d7d9151dde03bca2
   specs:
     toto (0.4.9)
       builder

@@ -1,17 +1,28 @@
-html { margin: 20px }
+
 body {
-  margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
   font-size: 110%;
-  line-height: 30px;
-  padding: 15px;
-  width: 720px;
-
+  margin:0;
+  letter-spacing:-0.5px;
+  color:#333;
 }
+section#header {
+	margin:10px 0 24px 0;
+}
+
+div#logo {}
+div#logo span {display:block;}
+div#logo span.mainlogo {font-size:240%; font-weight:700; letter-spacing:-3px; color:#000;} 
+div#logo span.description {color:#999; font-size:60%; margin:8px 0;}
+
+.content_wrapper { width:650px; padding:15px; line-height:25px; margin:0 auto;}
 header, footer, section, article {
 	display: block;
 }
 #content {
+}
+section.content ul {
+	margin:0 0 0 30px;
 }
 #by {
 	font-style: italic;
@@ -26,12 +37,45 @@ header, footer, section, article {
 #path {
 	color: #b53131;
 }
-.date {
+.post_detail .date {
   font-size:70%;
   font-weight:300;
   color:#666;
   
 }
+.post_detail h1 {
+	margin: 0;
+	padding: 0px 0 0 0;
+
+}
+article.post_listing section.summary {
+	margin:0 0 0 50px;
+}
+
+.post_listing .date {
+	float: left;
+	width: 29px;
+	height: 32px;
+	margin: 0;
+	margin-top: 3px;
+	margin-right: 20px;
+	padding-top: 2px;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 80%;
+	font-weight: bold;
+	color: #999999;
+}
+
+.post_listing .date b {
+	margin: 0;
+	padding: 0;
+	display: block;
+	margin-top: -5px;
+	font-size: 90%;
+	color: #5C5C5C;
+}
+
 a {
   color: #b83000;
 }
@@ -66,7 +110,7 @@ body > header > h1 {
 }
 .post p {
   margin: 10px 0;
-  font-size:85%;
+  font-size:80%;
 }
 .post .more {
   margin-top: -10px;
@@ -91,10 +135,12 @@ h3 {font-size: 100%}
 h1, h2, h3, h4 {
  
   margin: 10px 0;
-  font-weight: 600;
+  font-weight: 800;
+  letter-spacing:-1px;
+  color:#000;
 }
 ul, li {
-  font-size:90%;
+  font-size:85%;
 }
 code {
   font-family: 'Anonymous Pro', 'Bitstream Vera Sans', 'Monaco', Courier, mono;
