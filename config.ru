@@ -7,7 +7,7 @@ require 'rack/codehighlighter'
 
 # Rack config
 
-use Rack::Static, :urls => ['/css', '/js', '/images', '/favicon.ico'], :root => 'root'
+use Rack::Static, :urls => ['/css', '/js', '/images', '/favicon.ico'], :root => 'public'
 use Rack::Codehighlighter, :coderay, :markdown => true, :element => "pre>code", :pattern => /\A:::(\w+)\s*(\n|&#x000A;)/i, :logging => true
 CodeRay::Encoders["html"]::DEFAULT_OPTIONS[:line_numbers]=:inline
 use Rack::CommonLogger
