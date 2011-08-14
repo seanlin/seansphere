@@ -6,9 +6,9 @@ description: Advantages of using valid HTML and CSS in web development
 
 Below is actually part of my response on [Quora](http://www.quora.com/Why-use-valid-HTML-and-CSS0) "Why use valid HTML and CSS?" for the question, why use valid and semantic HTML and CSS.
 
-~
-
 Using valid HTML and CSS will ensure that no matter what versions of browser that you are using (whether older or newer), look and feel of the site remains the same because most browsers (beside IE) are built with standards set by W3C.
+
+~
 
 Regarding all those validation testing, you have to take them with a pinch of salt. Validators are there to provide some kind of guidance to web developer and designers to follow good coding practice or to detect careless mistakes (especially with placement and syntax). Once you are able to start writing semantic codes, you will be relying less on those validators as you know that you are writing good codes by adhering Web Standards.
 

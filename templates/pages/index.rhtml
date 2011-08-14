@@ -1,15 +1,15 @@
 <section id="articles">
   <% for article in articles[0...3] %>
-    <article class="post">
+    <article class="post post_listing">
       <header>
+		<time class="date" datetime="<%= Date.parse article.date %>"><%= Date.parse(article.date).strftime("%b") %><b><%= Date.parse(article.date).strftime("%d") %></b></time>
         <h1><a href="<%= article.path %>"><%= article.title %></a></h1>
-        <time class="date" datetime="<%= Date.parse article.date %>"><%= article.date %></time>
       </header>
 
-      <section class="content">
+      <section class="content summary">
         <%= article.summary %>
       </section>
-      <div class="more"><a href="<%= article.path %>">read on &raquo;</a></div>
+     <% ## <div class="more"><a href="<%= article.path %>">read on &raquo;</a></div> %>
     </article>
   <% end %>
 </section>
