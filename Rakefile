@@ -2,7 +2,7 @@ require 'toto'
 
 @config = Toto::Config::Defaults
 
-task :default => :new
+task :default => :publish
 
 desc "Create a new article."
 task :new do
@@ -25,18 +25,25 @@ task :new do
   end
 end
 
+# AWS S3 credentials
+AWS_ACCESS_KEY_ID = ""
+AWS_SECRET_ACCESS_KEY = ""
+AWS_BUCKER = ""
+
 desc "Publish my blog."
 task :publish do
   toto "publishing your article(s)..."
-  `git push heroku master`
+  `git push production master`
 end
 
 def toto msg
-  puts "\n  toto ~ #{msg}\n\n"
+  puts "\n toto  ~ #{msg}\n\n"
 end
 
 def ask message
   print message
   STDIN.gets.chomp
 end
+
+
 

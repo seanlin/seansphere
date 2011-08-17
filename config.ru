@@ -33,8 +33,8 @@ toto = Toto::Server.new do
   set :url => "http://seanlin.me"
   set :summary,   :max => 300, :delim => /~/                # length of article summary and delimiter
   # set :ext,       'txt'                                     # file extension for articles
-  set :cache,      28800                                    # cache duration, in seconds
-
+  set :cache,      28800                                  # cache duration, in seconds
+  set :analytics, ""                                      # Google Analaytics ID
   set :date, lambda {|now| now.strftime("%B #{now.day.ordinal} %Y") }
 end
 

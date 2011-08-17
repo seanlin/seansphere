@@ -16,6 +16,7 @@
       <noscript><a href="http://<%= @config[:disqus] %>.disqus.com/?url=ref">View the discussion thread.</a></noscript>
       <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
 	<% elsif @config[:comment][:app] == "livefyre" %>
+		<script type="text/javascript" src="http://livefyre.com/wjs/javascripts/ncomments.js#bn=288321"></script>
 		<script type='text/javascript' src='http://livefyre.com/wjs/javascripts/livefyre.js'></script>
 		<script type='text/javascript'>
 		    var fyre = LF({
