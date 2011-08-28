@@ -20,7 +20,7 @@ The environment will contain -
 ~
 
 
-### Installing HomeBrew
+#### Installing HomeBrew
 
 Copy and paste following codes inside the terminal.
 
@@ -34,7 +34,7 @@ Now you will have working installation of Homebrew. To test it out type
 
 in your terminal. If you see the list of example usage, your HomeBrew installation is a success.
 
-### UNIX Package Installer
+#### UNIX Package Installer
 
 If you have XCode installed on your system, then ignore this step.
 XCode is recommend for installing Python but not required. You can try to install Python without XCode by choosing an installer below.
@@ -44,14 +44,14 @@ Download and install -
 For OS X 10.7 Lion: [https://github.com/downloads/kennethreitz/osx-gcc-installer/GCC-10.7.pkg](https://github.com/downloads/kennethreitz/osx-gcc-installer/GCC-10.7.pkg)  
 For OS X 10.6 Snow Leopard: [https://github.com/downloads/kennethreitz/osx-gcc-installer/GCC-10.6.pkg](https://github.com/downloads/kennethreitz/osx-gcc-installer/GCC-10.6.pkg)
 
-### Installing Git
+#### Installing Git
 
 Just run following command in your terminal.
 
 	:::term
 	brew install git
 	
-### Installing Python
+#### Installing Python
 
 Run the command
 
@@ -63,22 +63,22 @@ after completion, run following command
 	:::term
 	brew install python --universal --framework
 	
-### Installing Pip
+#### Installing Pip
 
 Pip allows you to manage and install Python packages.
 Run the following command in your terminal.
 
 	:::term
-	brew install pip
+	easy_install pip
 	
-### Installing Virtualenv
+#### Installing Virtualenv
 
 Virtualenv allow you to have isolated Python environments for development. Run following command -
 
 	:::term
 	pip install virtualenv
 	
-### Creating Virtualenv
+#### Creating Virtualenv
 
 To create the isolated environment to install and run Django, create a new folder for your project and browse into it,
 
@@ -89,7 +89,7 @@ To create the isolated environment to install and run Django, create a new folde
 then run following command to start a new virtual environment -
 
 	:::term
-	virtualenv environment_name --no-sitepackages
+	virtualenv environment_name --no-site-packages
 	
 Change the "environment_name" to whatever name you want to set. Then run following two commands to activate virtualenv -
 
@@ -98,7 +98,7 @@ Change the "environment_name" to whatever name you want to set. Then run followi
 	
 Again, replace the "environment_name" with the one you created above. Now you will have extra "(environment_name)" in your terminal.
 
-### Installing Django
+#### Installing Django
 
 Run following command to install Django -
 
@@ -111,7 +111,7 @@ You now have a fully working environment for Django development. If you want MyS
 	brew install mysql
 	pip install http://downloads.sourceforge.net/project/mysql-python/mysql-python-test/1.2.3c1/MySQL-python-1.2.3c1.tar.gz?use_mirror=cdnetworks-us-2
 	
-### Installing PIL
+#### Installing PIL
 
 Just run following command to install PIL
 
@@ -119,7 +119,7 @@ Just run following command to install PIL
 	pip install PIL
 	
 	
-### Starting Django Project
+#### Starting Django Project
 
 
 Browse to your project directory from command line and activate your virtualenv if it hasn't

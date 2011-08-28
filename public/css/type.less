@@ -10,6 +10,7 @@ p {
   #font > .shorthand(normal,@basefont,@baseline);
   margin-bottom: @baseline;
   font-family: 'Open Sans', sans-serif;
+
   small {
     font-size: 11px;
     color: @grayLight;
@@ -20,7 +21,7 @@ p {
 // HEADINGS
 // --------
 
-h1, h2, h3, h4, h5, h6 {
+h3, h4, h4, h5, h6 {
   font-weight: bold;
   font-family: 'Open Sans', sans-serif;
   color: @grayDark;
@@ -28,6 +29,20 @@ h1, h2, h3, h4, h5, h6 {
     color: @grayLight;
   }
 }
+
+h1, h2 {
+  font-family: 'Droid Sans', sans-serif;
+  font-weight:700;
+  color: @grayDark;
+}
+
+h1, h2 {
+  letter-spacing:-1.7px;
+}
+h3, h4 {
+  letter-spacing:-1px;
+}
+
 h1 {
   margin-bottom: @baseline;
   font-size: 30px;
@@ -35,12 +50,17 @@ h1 {
   small {
     font-size: 18px;
   }
+
 }
 h2 {
   font-size: 24px;
   line-height: @baseline * 2;
+  font-weight:700;
   small {
     font-size: 14px;
+  }
+  a:hover {
+	text-decoration:none;
   }
 }
 h3, h4, h5, h6 {
@@ -74,6 +94,7 @@ h6 {
 // Unordered and Ordered lists
 ul, ol {
   margin: 0 0 @baseline 25px;
+  font-family: 'Open Sans', sans-serif;
 }
 ul ul,
 ul ol,
