@@ -1,6 +1,6 @@
-<article class="post span11 columns content_wrapper">
+<article class="post span10 columns content_wrapper">
   <header>
-    <h2><%= title %></h2>
+    <h1><%= title %></h1>
     <time class="date" datetime="<%= Date.parse article.date %>"><%= Date.parse(article.date).strftime("%b") %> <%= Date.parse(article.date).strftime("%d") %> <%= Date.parse(article.date).strftime("%Y") %></time>
     <div class="livefyre-comments" article_id="{article_id}"></div>
   </header>
