@@ -1,4 +1,7 @@
 <article class="post span10 columns content_wrapper">
+	<ul class="button-group">
+	    <li><a href="/" class="button icon home">Back to Home</a></li>
+	</ul>
   <header>
     <h1><%= title %></h1>
     <time class="date" datetime="<%= Date.parse article.date %>"><%= Date.parse(article.date).strftime("%b") %> <%= Date.parse(article.date).strftime("%d") %> <%= Date.parse(article.date).strftime("%Y") %></time>
