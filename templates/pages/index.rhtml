@@ -7,7 +7,7 @@
 	      <header>
 
 	        <h2><a href="<%= article.path %>"><%= article.title %></a></h2>
-			<time class="date" datetime="<%= Date.parse article.date %>"><%= Date.parse(article.date).strftime("%b") %> <%= Date.parse(article.date).strftime("%d") %> <%= Date.parse(article.date).strftime("%Y") %></time>
+			<time class="date" datetime="<%= Date.parse article.date %>"><%= Date.parse(article.date).strftime("%b") %> <%= Date.parse(article.date).strftime("%d") %> <%= Date.parse(article.date).strftime("%Y") %></time><div class="comment_count"><a href="<%= article.path %>#disqus_thread"></a></div>
 	      </header>
 
 	      <section class="content summary">

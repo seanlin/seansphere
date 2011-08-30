@@ -13,7 +13,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
 	<meta name="description" content="<%= @context[:description] || 'Rumbling on latest web technology, start-ups and cutting edge stuffs' %>" />
 	<meta name="keywords" content="<%= @context[:tags] || 'web development, start-up, django, python, ruby on rails' %>" />
-	<link rel="stylesheet" type="text/css" href="https://seansphere.s3.amazonaws.com/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
 	<link rel="alternate" type="application/rss+xml" title="ssphere" href="http://feeds.feedburner.com/ssphere" />
     
   </head>
@@ -29,6 +29,16 @@
     <footer>
       			
     </footer>
+  <script type="text/javascript">
+    var disqus_shortname = 'seansphere'; 
+
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+  </script>
   </body>
   <script type="text/javascript" src="http://assets.seanlin.me/js/site.js"></script>
   <script type="text/javascript">
