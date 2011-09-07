@@ -1,0 +1,39 @@
+---
+title: Facebook on Rails
+tags: facebook, rails, gems
+date: 2011/06/01
+description: Gems for developing Facebook powered web application with Ruby on Rails
+
+Everyone like to integrate with Facebook on whatever web or mobile apps they are building though it’s quite painful to be working with Facebook’s API which occasionally goes through changes. Unlike PHP which is blessed with official SDK from Facebook, Rails or other Ruby-based frameworks developers (such as Sinatra) have to totally rely on the JavaScripts SDK to do the integration. 
+
+Fortunately, there are several Gems out there that make life easier to work with Facebook though most are poorly documented or tutorialized. Especially when it comes to Rails 3, it’s hard to find a gem that works really well without going through painful experiences. 
+
+~
+
+So which Gems? I will list through several Gems that I have personally used. When it comes to Facebook integration, there’s two types - Facebook Connect which is to authenticate a user to login into a site or Facebook iframe app which is very tightly integrated with the Facebook.
+
+### For Facebook’s iframe Apps
+
+#### Facebooker2
+
+This is a Rails 3 port of famous Facebooker Gem. It can be used for both Facebook connect and iframe app (with some configuration). Facebooker2 is quite well documented and tutorials can be found in several websites (though most of them do not work). If you need to do a iframe app in Rails, this is the gem that will save you lots of sweat and blood in
+development. [https://github.com/mmangino/facebooker2](https://github.com/mmangino/facebooker2)
+
+#### FB_Graph
+
+Yet another good Gem with good documentation. Unlike Facebooker2, it’s written for Rails 3 in mind so less problem configuration and deploying to platforms like Heroku. Best thing is the bundled sample app which actually shows how to integrate thing such as authentication and authorization with Facebook. This too can be used for both web app and iframe app. [https://github.com/nov/fb_graph](https://github.com/nov/fb_graph)
+
+#### Koala
+
+This is a huge Ruby library for accessing Facebook Graph API which means it can be used with any framework written in Ruby. There’s a tutorial on using Koala in Rails environment but beyond that, there’s no official tutorial or documentation for Rails or other framework. [https://github.com/arsduo/koala](https://github.com/arsduo/koala)
+
+### For Facebook Connect App
+
+#### OmniAuth
+
+One of my favorite Gem of all time to connect with various authentication services. OmniAuth enables you to connect with not only Facebook but also Twitter, OpenID, Gmail and etc (and the list if growing). Well documented so that you won’t have to spend a whole day to get your Facebook Connect up and running. It integrates very well with Devise (an authentication Gem for Rails) so it’s really easy as ABC to offer Connect services or classic registration process.
+[https://github.com/intridea/omniauth](https://github.com/intridea/omniauth)
+
+#### AuthLogic
+
+AuthLogic is one of the most well-known and used Rails’ Gem for authentication and it has several official add-on to get developers started with offering Facebook Connect option to users. Very well documented and tutorials can be found all over the internet. [https://github.com/binarylogic/authlogic](https://github.com/binarylogic/authlogic)
