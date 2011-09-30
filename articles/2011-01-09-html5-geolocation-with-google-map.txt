@@ -1,7 +1,7 @@
 --- 
 title: HTML5 Geolocation with Google Map
 tags: html5, geolocation, googlemap
-date: 2011/01/09
+date: 2011/10/01
 description: Showing real-time location with Google Map and HTML5 geolocation API
 
 Everyone is doing a geo app now day whether web-based or native. Putting following codes will give you a Google Map that use V3 aka latest version (at the time of writing) of Google Map API. Beside detecting user geolocation in modern browser including those of mobile (Android and iOS), the script will show several defined locations with animated markers and info window that can be extended with basic HTML and CSS. The script is written in a way to make it easier for web developer to loop the locations markers to show recent locations or places. 
