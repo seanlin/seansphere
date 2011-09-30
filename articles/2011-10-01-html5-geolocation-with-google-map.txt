@@ -6,6 +6,8 @@ description: Showing real-time location with Google Map and HTML5 geolocation AP
 
 Everyone is doing a geo app now day whether web-based or native. Putting following codes will give you a Google Map that use V3 aka latest version (at the time of writing) of Google Map API. Beside detecting user geolocation in modern browser including those of mobile (Android and iOS), the script will show several defined locations with animated markers and info window that can be extended with basic HTML and CSS. The script is written in a way to make it easier for web developer to loop the locations markers to show recent locations or places. 
 
+~
+
 In actual development, your application should be generating markers and info windows from GeoRSS, KML, Fusiontables, SimpleGeo or similar geo feeds/storage services. Follow [this link](http://goo.gl/7Z51c) for more information on loading map layers from feeds and geo storage services.
 
 You can also fork or edit the code [here](https://gist.github.com/1254376)
@@ -44,7 +46,7 @@ You can also fork or edit the code [here](https://gist.github.com/1254376)
 
 	        var marker, i;
 
-	        for (i = 0; i &lt; locations.length; i++) {
+	        for (i = 0; i < locations.length; i++) {
 	          marker = new google.maps.Marker({
 	            animation: google.maps.Animation.DROP,
 	            position: new google.maps.LatLng(locations[i][1], locations[i][2]),
