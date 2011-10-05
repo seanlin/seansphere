@@ -1,0 +1,35 @@
+--- 
+title: Develop for WordPress like a pro
+tags: wordpress, Git, deployment
+date: 2011/10/05
+description: Tips and tricks on developing and deploying WordPress in multiple environment
+
+In the world of WordPress (where everyday is about pretty themes and powerful plugins), version control, developing and deploying in multiple environment are things developers or designers are never or seldom heard of (except for those working on the core contribution of WordPress). There maybe times when you wish that you can actually revert back your theme or plugin to what it was a few days or weeks ago but you couldn't  or develop theme/plugin alongside with another developer/designer but you can't because it's too much of a hassle combining and integrating the codes.
+
+~
+
+Version control and Source Code Management (SCM) allows you to do all those things without causing much headaches. However, WordPress itself is not designed for multi-environment development and deployment out of the box. It's either you will have to deploy and setting them up separately or write your own PHP stuffs to adept WordPress for multiple environment.
+
+Once you have committed and pushed out the codes, there are multiple ways to actually deploy the WordPress to testing, staging and production servers. Hardest ways are of course to use deployment solutions such as Chef and Capistrano but I believe unless you are involved in pretty big projects with strict requirement to use WordPress, you won't be coding for it if you have knowledge on Chef and Capistrano workflows. So there's a need to figure out a simple yet effective workflow to develop and deploy WordPress projects.
+
+Luckily, nedsbeds has come out with a simple plugin called [WP-Deploy](http://goo.gl/Go0hM) to solve the major bane in WordPress deployment - wp-config.php. WP-Deploy allows developer to define multiple wp-config files for different stages of deployment (local, staging, production and etc) right from the WordPress's admin. Below is the actual workflow that I have setup to develop and deploy WordPress on local, development and staging/production servers.
+
+### Local
+
+* MAMP - though [Bitnami](http://bitnami.org/) is great for per-project environment setup, MAMP still provides user-friendliness and ease of use for entry-mid level developers/designers.
+* [Less CSS](http://lesscss.org/) - less allows us to write easily manageable CSS and test them in the local/development environment simply by using JavaScripts file to render instead of compiling. We actually compile it using [Less app for Mac](http://incident57.com/less/) before deploying to staging or production server. Less app enables us to compile modular Less files into one and also minify them.
+* WordPress with WP-Deploy plugin - As I said above, required to install and activate it before committing and deploying to other environments.
+* Git - our preferred SCM and VCS, and we use [Springloops](http://www.springloops.com/v2/) to host all our private repositories and Github for opensource ones. Springloops also enable us to deploy the codes directly to the server through FTP/SFTP on every deployment (both manually and automatically). For our command-line-illiterate developers/designers, we use [Tower](http://www.git-tower.com/) by fournova - a visual Git client for Mac.
+
+
+### Development/Testing
+
+* Nginx with PHP-FPM - fast and lightweight webserver to host PHP based projects.
+* Git - a failsafe plan to pull from our Git repo if FTP/SFTP deployment through Springloops is failed.
+* phpMyAdmin - to import/export database from/to local environment.
+
+### Staging/Production
+
+* Basically nothing, we just need the server to be PHP, MySQL and FTP/SFTP enabled, all the codes will be pushed through Springloops's deployment.
+
+I am still figuring out a way to deploy MySQL with same set of data and schema to multiple environments without involving non-humane solutions like Chef and Capistrano so that my developers/designers will have agile yet comfortable and productive workflows without much headache.
