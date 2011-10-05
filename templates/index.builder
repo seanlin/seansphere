@@ -13,7 +13,7 @@ xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
       xml.published article[:date].iso8601
       xml.updated article[:date].iso8601
       xml.author { xml.name @config[:author] }
-      xml.summary article.summary, "type" => "xhtml"
+      xml.summary article.summary
     end
   end
 end
