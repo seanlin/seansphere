@@ -29,7 +29,6 @@ toto = Toto::Server.new do
   # set :root,      "index"                                   # page to load on /
   # set :date,      lambda {|now| now.strftime("%d/%m/%Y") }  # date format for articles
   set :markdown,  :smart                                    # use markdown + smart-mode
-  set :comment, {:app => "livefyre", :id => "288321"} 		#choose comment system
   set :url => "http://seanlin.me"
   set :summary,   :max => 300, :delim => /~/                # length of article summary and delimiter
   # set :ext,       'txt'                                     # file extension for articles
