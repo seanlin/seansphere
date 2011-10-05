@@ -1,13 +1,4 @@
 GIT
-  remote: https://github.com/seanlin/toto.git
-  revision: 25e786ef07aa7c806f302873d7d9151dde03bca2
-  specs:
-    toto (0.4.9)
-      builder
-      rack
-      rdiscount
-
-GIT
   remote: https://github.com/wbzyl/rack-codehighlighter.git
   revision: 8160893529c68cb7692dc60f6a9140d8e46648cf
   specs:
@@ -23,6 +14,10 @@ GEM
     nokogiri (1.5.0)
     rack (1.3.2)
     rdiscount (1.6.8)
+    toto (0.4.9)
+      builder
+      rack
+      rdiscount
 
 PLATFORMS
   ruby
@@ -32,4 +27,4 @@ DEPENDENCIES
   coderay
   rack-codehighlighter!
   rdiscount
-  toto!
+  toto
