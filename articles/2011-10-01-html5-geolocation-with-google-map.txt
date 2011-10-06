@@ -62,4 +62,3 @@ You can also fork or edit the code [here](https://gist.github.com/1254376)
 	        }
 	    }
 	</script>
-
