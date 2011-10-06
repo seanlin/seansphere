@@ -12,4 +12,4 @@ In actual development, your application should be generating markers and info wi
 
 You can also fork or edit the code [here](https://gist.github.com/1254376)
 
-<script src="https://gist.github.com/1254376.js?file=gistfile1.html"></script>
+<div class="gist"><script src="https://gist.github.com/1254376.js?file=gistfile1.html"></script></div>
