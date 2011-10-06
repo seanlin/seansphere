@@ -40,9 +40,7 @@ set :to_html   do |path, page, ctx|                         # returns an html, f
   ERB.new(File.read("#{path}/#{page}.rhtml")).result(ctx)
 end
 
-set :error     do |code|                                    # The HTML for your error page
-  "<font style='font-size:300%'>Opps, an error and it's probably my bad! (#{code})</font>"
-end
+
 
 run toto
 
