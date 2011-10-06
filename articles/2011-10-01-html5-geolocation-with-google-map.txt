@@ -46,7 +46,7 @@ You can also fork or edit the code [here](https://gist.github.com/1254376)
 
 	        var marker, i;
 
-	        for (i = 0; i &lt; locations.length; i++) {
+	        for (i = 0; i < locations.length; i++) {
 	          marker = new google.maps.Marker({
 	            animation: google.maps.Animation.DROP,
 	            position: new google.maps.LatLng(locations[i][1], locations[i][2]),
