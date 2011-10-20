@@ -1,0 +1,19 @@
+--- 
+title: Code like a Designer
+tags: coding, html5, design, css3
+date: 2011/10/08
+description: Tips for web developer to pay attention to details of design or user interface
+
+Problems always arise whenever Designer and Developers are working together. Design and creativity are boundless  without any restriction. Developers on the other hand are always restricted by technical limitations. 
+
+I have seen a lot of conflicts between design and development team at other web studios and start-ups and from my observations, those conflicts are normally based on two things - designers who are clueless about development process and technology and lazy developers who aren't bothered to find solutions to preserve original visuals and concepts of design.
+
+~
+
+Majority of problems between designers and developers are similar from one start-ups/studio to another - layout, typefaces, color and content positioning.
+
+### Layout
+
+The most conflicted issue I have ever seen especially for those work places where full CSS layouts are used instead of tables-based. Design team comes up with a ground-shaking design, the client loves it so much but the development team starts to mutter all the acronyms (OMG, WTF, WTH). 
+
+An all-rounded developer or development team will start to think about things like fitting the design into grids, browser compatibility, coding structure for key elements (such as navigation, header, footer and sidebar) and positioning for SEO.7=

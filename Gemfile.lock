@@ -9,15 +9,35 @@ GIT
 GEM
   remote: http://rubygems.org/
   specs:
+    addressable (2.2.6)
     builder (3.0.0)
     coderay (0.9.8)
+    faraday (0.7.5)
+      addressable (~> 2.2.6)
+      multipart-post (~> 1.1.3)
+      rack (< 2, >= 1.1.0)
+    faraday_middleware (0.7.0)
+      faraday (~> 0.7.3)
+    hashie (1.1.0)
+    multi_json (1.0.3)
+    multi_xml (0.4.1)
+    multipart-post (1.1.3)
     nokogiri (1.5.0)
+    oauth (0.4.5)
     rack (1.3.2)
     rdiscount (1.6.8)
+    simple_oauth (0.1.5)
     toto (0.4.9)
       builder
       rack
       rdiscount
+    twitter (1.7.2)
+      faraday (~> 0.7.4)
+      faraday_middleware (~> 0.7.0)
+      hashie (~> 1.1.0)
+      multi_json (~> 1.0.0)
+      multi_xml (~> 0.4.0)
+      simple_oauth (~> 0.1.5)
 
 PLATFORMS
   ruby
@@ -25,6 +45,8 @@ PLATFORMS
 DEPENDENCIES
   builder
   coderay
+  oauth
   rack-codehighlighter!
   rdiscount
   toto
+  twitter

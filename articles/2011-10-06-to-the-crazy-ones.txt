@@ -1,0 +1,8 @@
+--- 
+title: To the crazy ones
+tags: stevejobs, apple
+date: 2011/10/06
+description: A tribute to Steve Jobs, the greatest inventor and genius of our time.
+
+Never did Steve Jobs realize that he's actually the greatest craziest one of our time. 
+<iframe width="580" height="335" src="http://www.youtube.com/embed/DrBw2cXWZS8?rel=0" frameborder="0" allowfullscreen></iframe>

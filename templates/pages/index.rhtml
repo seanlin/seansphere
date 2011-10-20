@@ -1,25 +1,37 @@
 
-<div class="span10 columns content_wrapper">
+<div class="span10 content_wrapper">
+	<div class="btn-group">
+	   <a href="/index.xml" class="btn small icon rss" >Feed</a>
+	   <a href="http://github.com/seanlin" class="btn small icon fork" >Github</a>
 
-	<section id="articles">
-	  <% for article in articles[0...5] %>
+	</div>
+	<section id="latest-article">
+	  <% for article in articles[0...1] %>
 	    <article class="post post_listing">
 	      <header>
 
-	        <h2><a href="<%= article.path %>"><%= article.title %></a></h2>
-			<time class="date" datetime="<%= Date.parse article.date %>"><%= Date.parse(article.date).strftime("%b") %> <%= Date.parse(article.date).strftime("%d") %> <%= Date.parse(article.date).strftime("%Y") %></time><div class="comment_count"><a href="<%= article.path %>#disqus_thread"></a></div>
-	      </header>
 
+					<h2 class="featured"><a href="<%= article.path %>"><%= article.title %></a></h2>
+					<time class="date" datetime="<%= Date.parse article.date %>"><%= Date.parse(article.date).strftime("%b") %> <%= Date.parse(article.date).strftime("%d") %> <%= Date.parse(article.date).strftime("%Y") %></time>
+
+	        
+			
+	      </header>
+		  
 	      <section class="content summary">
 	        <%= article.summary %>
 	      </section>
-	     <% ## <div class="more"><a href="<%= article.path %>">read on &raquo;</a></div> %>
+	     
 	    </article>
 	  <% end %>
 	</section>
-
+	
+	
 	<section id="archives">
-	  <%= archives[6..-1] %>
+	 <h3 class="section-title">// recent articles</h3>
+	  <%= archives[1..-1] %>
 	</section>
-<a href="http://github.com/seanlin"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/7afbc8b248c68eb468279e8c17986ad46549fb71/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub"></a>
+	
+
+
 </div>

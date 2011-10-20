@@ -1,11 +1,12 @@
 <article class="post span10 columns content_wrapper">
-	<ul class="button-group">
-	    <li><a href="/" class="button icon home">Back to Home</a></li>
-		<li><a href="<%= article.path %>#disqus_thread" class="button icon comment"></a></li>
-	</ul>
+	<div class="btn-group">
+	   <a href="/" class="btn small icon home" >Back to Home</a>
+	   <a href="<%= article.path %>#disqus_thread" class="btn small icon chat"></a>
+	</div>
+	
   <header>
-    <h1><%= title %></h1>
-    <time class="date" datetime="<%= Date.parse article.date %>"><%= Date.parse(article.date).strftime("%b") %> <%= Date.parse(article.date).strftime("%d") %> <%= Date.parse(article.date).strftime("%Y") %></time>
+    <div class="page-header"><h1><%= title %></h1> <time class="date" datetime="<%= Date.parse article.date %>"><%= Date.parse(article.date).strftime("%b") %> <%= Date.parse(article.date).strftime("%d") %> <%= Date.parse(article.date).strftime("%Y") %></time></div>
+   
   </header>
 
   <section class="content">
@@ -14,18 +15,17 @@
 
   <section class="comments">
 	<div id="disqus_thread"></div>
-	<script type="text/javascript">
-	   
-	    var disqus_shortname = 'seansphere'; 
-	    (function() {
-	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-	        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	    })();
-	</script>
+
 
 
   </section>
-<a href="http://github.com/seanlin"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/7afbc8b248c68eb468279e8c17986ad46549fb71/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub"></a>
 </article>
-
+<script type="text/javascript">
+   
+    var disqus_shortname = 'seansphere'; 
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>

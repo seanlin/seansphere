@@ -8,12 +8,10 @@
 
 p {
   #font > .shorthand(normal,@basefont,@baseline);
-  margin-bottom: @baseline;
-  font-family: 'Open Sans', sans-serif;
-
+  margin-bottom: @baseline / 2;
   small {
-    font-size: 11px;
-    color: @grayLighter;
+    font-size: @basefont - 2;
+    color: @grayLight;
   }
 }
 
@@ -21,46 +19,26 @@ p {
 // HEADINGS
 // --------
 
-h3, h4, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
-  font-family: 'Open Sans', sans-serif;
   color: @grayDark;
   small {
     color: @grayLight;
   }
 }
-
-h1, h2 {
-  font-family: 'Droid Sans', sans-serif;
-  font-weight:700;
-  color: @grayDark;
-}
-
-h1, h2 {
-  letter-spacing:-1.7px;
-}
-h3, h4 {
-  letter-spacing:-1px;
-}
-
 h1 {
   margin-bottom: @baseline;
-  font-size: 22px;
+  font-size: 30px;
   line-height: @baseline * 2;
   small {
     font-size: 18px;
   }
-
 }
 h2 {
-  font-size: 20px;
+  font-size: 24px;
   line-height: @baseline * 2;
-  font-weight:700;
   small {
     font-size: 14px;
-  }
-  a:hover {
-	text-decoration:none;
   }
 }
 h3, h4, h5, h6 {
@@ -94,7 +72,6 @@ h6 {
 // Unordered and Ordered lists
 ul, ol {
   margin: 0 0 @baseline 25px;
-  font-family: 'Open Sans', sans-serif;
 }
 ul ul,
 ul ol,
@@ -110,7 +87,7 @@ ol {
 }
 li {
   line-height: @baseline;
-  color: @black;
+  color: @gray;
 }
 ul.unstyled {
   list-style: none;
@@ -136,7 +113,7 @@ dl {
 
 // Horizontal rules
 hr {
-  margin: 0 0 19px;
+  margin: 20px 0 19px;
   border: 0;
   border-bottom: 1px solid #eee;
 }
@@ -145,7 +122,6 @@ hr {
 strong {
   font-style: inherit;
   font-weight: bold;
-  line-height: inherit;
 }
 em {
   font-style: italic;
@@ -153,7 +129,7 @@ em {
   line-height: inherit;
 }
 .muted {
-  color: @grayLighter;
+  color: @grayLight;
 }
 
 // Blockquotes
@@ -165,7 +141,7 @@ blockquote {
     #font > .shorthand(300,14px,@baseline);
     margin-bottom: 0;
   }
-  cite {
+  small {
     display: block;
     #font > .shorthand(300,12px,@baseline);
     color: @grayLight;
@@ -197,11 +173,15 @@ code {
 pre {
   background-color: #f5f5f5;
   display: block;
-  padding: @baseline - 1;
+  padding: (@baseline - 1) / 2;
   margin: 0 0 @baseline;
   line-height: @baseline;
   font-size: 12px;
+  border: 1px solid #ccc;
   border: 1px solid rgba(0,0,0,.15);
   .border-radius(3px);
+  white-space: pre;
   white-space: pre-wrap;
+  word-wrap: break-word;
+
 }

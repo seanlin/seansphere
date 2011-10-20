@@ -4,7 +4,9 @@ tags: wordpress, Git, deployment
 date: 2011/10/05
 description: Tips and tricks on developing and deploying WordPress in multiple environment
 
-In the world of WordPress (where everyday is about pretty themes and powerful plugins), version control, developing and deploying in multiple environment are things developers or designers are never or seldom heard of (except for those working on the core contribution of WordPress). There maybe times when you wish that you can actually revert back your theme or plugin to what it was a few days or weeks ago but you couldn't  or develop theme/plugin alongside with another developer/designer but you can't because it's too much of a hassle combining and integrating the codes.
+In the world of WordPress (where everyday is about pretty themes and powerful plugins), version control, developing and deploying in multiple environment are things developers or designers are never or seldom heard of (except for those working on the core contribution of WordPress). 
+
+There maybe times when you wish that you can actually revert back your theme or plugin to what it was a few days or weeks ago but you couldn't  or develop theme/plugin alongside with another developer/designer but you can't because it's too much of a hassle combining and integrating the codes.
 
 ~
 

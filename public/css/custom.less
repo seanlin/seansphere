@@ -1,0 +1,90 @@
+// CONTENT WRAPPER
+//----------------
+
+::selection {background:#FFCC66; color:#fff; text-shadown:none;}
+
+div.wrapper {background:#fff}
+
+article.content_wrapper, div.content_wrapper {
+  padding:20px 25px 20px 25px;
+  position:relative;
+}
+
+footer {border:0;}
+
+// Github ribbon
+//--------------
+
+// Time
+//-----
+
+time.date {
+ 
+
+  font-size:11px;
+  color:#999;
+  text-transform:UPPERCASE;
+
+  a {color:#fff;}
+}
+
+ul.article-listing { margin:0;
+ li {margin:0 0 8px 0; list-style:none; font-weight:300; font-size:17px; display:block; letter-spacing:0.5px;
+		a {color:#000;}
+		time.date-archive {display:inline-block; width: 60px; margin:0 5px 0 0; padding:0 8px 0 6px;}
+		time.label {background:#eee; color:#999; font-weight:700}
+	}
+ li:hover {text-decoration:none; color:#000;
+		a {color:#666;
+			&:hover {text-decoration:none;}
+		}
+		time.label {background:#999; color:#fff} 
+	}
+ li:nth-child(odd) {
+		time.label {background:#ccc; color:#fff}
+		&:hover {
+			time.label {background:#999;}
+		}
+	}
+}
+
+#latest-article {border-bottom:1px dotted #ccc;}
+
+body {font-family:  proxima-nova,sans-serif !important;}
+
+article {
+	header {margin: 5px 0 5px 0;}
+	h1,h2,h3,h4,h5,h6 {font-family: proxima-nova,sans-serif; letter-spacing:-1px;}
+	h1 {font-size:27px; letter-spacing:-2px; margin:3px 0; font-weight:800; }
+	h2.featured {font-size:26px; letter-spacing:-2px; margin:0 0 5px 0; line-height:20px; font-weight:700;
+		a {text-decoration:none;
+			&:hover {text-decoration:none;}
+		}
+	}
+	p {margin:12px 0; line-height:21px; hyphens: auto; -webkit-hyphens: auto;  -moz-hyphens: auto;}
+	p, li {color:#000; text-align:justify; hyphens: auto; -webkit-hyphens: auto;  -moz-hyphens: auto; font-weight:400;
+			a {text-decoration:underline;}
+	}
+	li {margin:2px 0; line-height:20px;}
+
+}
+
+div.btn-group {margin:0 0 15px 0;
+	button {
+		a:hover {text-decoration:none;}
+		.primary { color:#fff;
+			a {color:#fff;}
+		}
+	}
+}
+
+#tweets {margin:5px 0;
+	ul {margin:0; list-style:none; 
+		li p {font-size:11px;}
+	}
+}
+
+h3.section-title {margin:5px 0; letter-spacing:-1px; font-family:proxima-nova,sans-serif;}
+
+div.crazyone {margin:55px 0 0 0;}
+

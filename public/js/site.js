@@ -1,5 +1,6 @@
 WebFontConfig = {
-    google: { families: [ 'Open+Sans:300,400,600,700:latin','Droid+Sans:400,700:latin' ] }
+    google: { families: [ 'Open+Sans:300,400,600,700:latin','Droid+Sans:400,700:latin' ] },
+	typekit: { id: 'qgj2ipn'}
   };
   (function() {
     var wf = document.createElement('script');
@@ -12,3 +13,16 @@ WebFontConfig = {
   })();
 
 
+Hyphenator.config({
+	useCSS3hyphenation: true,
+	minwordlength : 6,
+	selectorfunction: function() {
+		return $('p').get();
+	}
+});
+Hyphenator.run();
+
+
+$(function(){
+	$('#tweets').tweetable({username: 'geeksean', time: true, limit: 1, replies: false, position: 'append'});
+});

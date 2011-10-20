@@ -1,9 +1,8 @@
 require 'bundler'
-Bundler.require
-
 require 'toto'
 require 'coderay'
 require 'rack/codehighlighter'
+
 
 # Rack config
 
@@ -15,6 +14,7 @@ use Rack::CommonLogger
 if ENV['RACK_ENV'] == 'development'
   use Rack::ShowExceptions
 end
+
 
 #
 # Create and configure a toto instance

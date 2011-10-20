@@ -1,9 +1,9 @@
-<h1><%= @path %></h1>
-<ul>
+
+<ul class="article-listing">
   <% if archives.length > 0 %>
     <% for entry in archives %>
-      <li>
-        <a href="<%= entry.path %>"><%= entry.title %></a>
+      <li>	<a href="<%= entry.path %>"><time class="date-archive label" datetime="<%= Date.parse entry.date %>"><%= Date.parse(entry.date).strftime("%b") %> <%= Date.parse(entry.date).strftime("%d") %> <%= Date.parse(entry.date).strftime("%Y") %></time>
+        <%= entry.title %></a>
       </li>
     <% end %>
   <% end %>
