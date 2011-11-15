@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html>
   <head>
 	<title>
 		<% if @path == 'index' %>
@@ -14,10 +13,10 @@
 	<meta http-equiv="content-language" content="en">
 	<meta name="description" content="<%= @context[:description] || 'Rumbling on latest web technology, start-ups and cutting edge stuffs' %>">
 	<meta name="keywords" content="<%= @context[:tags] || 'web development, start-up, django, python, ruby on rails' %>">
-	<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="https://s3-ap-southeast-1.amazonaws.com/seansphere/css/bootstrap.css">
 	<link rel="alternate" type="application/atom+xml" title="ssphere" href="/index.xml" />
-    <script type="text/javascript">
-	   var disqus_developer = 1; // this would set it to developer mode
+  <script type="text/javascript">
+	   var disqus_developer = 0; // this would set it to developer mode
 	</script>
   </head>
   <body>
@@ -58,8 +57,7 @@
 </script>
   </body>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-  <script type="text/javascript" src="/js/hyphenator.js"></script>
-  <script type="text/javascript" src="/js/twitter.js"></script>
-  <script type="text/javascript" src="/js/site.js"></script>
+  <script type="text/javascript" src="https://s3-ap-southeast-1.amazonaws.com/seansphere/js/hyphenator.js"></script>
+  <script type="text/javascript" src="https://s3-ap-southeast-1.amazonaws.com/seansphere/js/site.js"></script>
 </html>
 
