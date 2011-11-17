@@ -1,0 +1,23 @@
+---
+title: Automate geocoding in Django model
+tags: django, geocoding
+date: 2011/11/17
+description: Automate geocoding of Django model in easy steps.
+
+Maps have become major part of most web applications, especially to those with locations based services. Yet, all the map services require not-so user friendly Latitude and Longitude to represent locations.
+
+Most developers sought to solve the problem by using client-side (JavaScripts) geocoding but triggering geocoding and rendering location somestimes result in poor load performance to frontend.
+
+~
+
+If you are a Django developer, using simple solution below will trigger application to geocode on Save and add latitude and longitude to the field specified in the model.
+
+A sample model file is provided below for usage reference.
+
+<script src="https://gist.github.com/1372541.js?file=model.py"></script>
+
+Helper file that send request to Google Geocoder and get back the latitude and longitude via JSON.
+
+<script src="https://gist.github.com/1372541.js?file=helpers.py"></script>
+
+
