@@ -437,7 +437,7 @@ ul.article-listing li:hover time.label{background:#999;color:#ffffff;}
 ul.article-listing li:nth-child(odd) time.label{background:#ccc;color:#ffffff;}
 ul.article-listing li:nth-child(odd):hover time.label{background:#999;}
 #latest-article{border-bottom:1px dotted #ccc;}
-body{font-family:proxima-nova,sans-serif !important;}
+body{font-family:'Open Sans',sans-serif !important;}
 article header{margin:5px 0 5px 0;}
 article h1,article h2,article h3,article h4,article h5,article h6{font-family:proxima-nova,sans-serif;letter-spacing:-1px;}
 article h1{font-size:27px;letter-spacing:-2px;margin:3px 0;font-weight:800;}
@@ -448,5 +448,5 @@ article li{margin:2px 0;line-height:20px;}
 div.btn-group{margin:0 0 15px 0;}div.btn-group button a:hover{text-decoration:none;}
 div.btn-group button .primary{color:#fff;}div.btn-group button .primary a{color:#fff;}
 #tweets{margin:5px 0;}#tweets ul{margin:0;list-style:none;}#tweets ul li p{font-size:11px;}
-h3.section-title{margin:5px 0;letter-spacing:-1px;font-family:proxima-nova,sans-serif;}
+h3.section-title{margin:5px 0;letter-spacing:-1px;font-family:'Open Sans',sans-serif;}
 div.crazyone{margin:55px 0 0 0;}
