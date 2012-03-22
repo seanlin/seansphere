@@ -7,3 +7,4 @@ gem "twitter"
 gem "oauth"
 gem "coderay"
 gem "rack-codehighlighter", :git => 'https://github.com/wbzyl/rack-codehighlighter.git'
+gem "newrelic_rpm"
