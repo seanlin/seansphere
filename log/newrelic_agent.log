@@ -1,0 +1,31 @@
+# Logfile created on 2012-03-25 18:18:36 +0800 by logger.rb/31641
+[03/25/12 18:18:36 +0800 Seans-iMac.local (7040)] INFO : Dispatcher: thin
+[03/25/12 18:18:36 +0800 Seans-iMac.local (7040)] INFO : Application: SeanSphere
+[03/25/12 18:18:36 +0800 Seans-iMac.local (7040)] WARN : Agent configured not to send data in this environment - edit newrelic.yml to change this
+[03/25/12 18:18:36 +0800 Seans-iMac.local (7040)] INFO : New Relic Ruby Agent 3.3.2.1 Initialized: pid = 7040
+[03/25/12 18:18:36 +0800 Seans-iMac.local (7040)] INFO : Agent Log at /Users/seanlin/Ruby Projects/seansphere/log/newrelic_agent.log
+[03/25/12 18:18:54 +0800 Seans-iMac.local (7042)] INFO : Dispatcher: thin
+[03/25/12 18:18:54 +0800 Seans-iMac.local (7042)] INFO : Application: SeanSphere
+[03/25/12 18:18:54 +0800 Seans-iMac.local (7042)] WARN : Agent configured not to send data in this environment - edit newrelic.yml to change this
+[03/25/12 18:18:54 +0800 Seans-iMac.local (7042)] INFO : New Relic Ruby Agent 3.3.2.1 Initialized: pid = 7042
+[03/25/12 18:18:54 +0800 Seans-iMac.local (7042)] INFO : Agent Log at /Users/seanlin/Ruby Projects/seansphere/log/newrelic_agent.log
+[03/25/12 18:21:46 +0800 Seans-iMac.local (7050)] INFO : Dispatcher: thin
+[03/25/12 18:21:46 +0800 Seans-iMac.local (7050)] INFO : Application: SeanSphere
+[03/25/12 18:21:46 +0800 Seans-iMac.local (7050)] WARN : Agent configured not to send data in this environment - edit newrelic.yml to change this
+[03/25/12 18:21:46 +0800 Seans-iMac.local (7050)] INFO : New Relic Ruby Agent 3.3.2.1 Initialized: pid = 7050
+[03/25/12 18:21:46 +0800 Seans-iMac.local (7050)] INFO : Agent Log at /Users/seanlin/Ruby Projects/seansphere/log/newrelic_agent.log
+[03/25/12 18:24:10 +0800 Seans-iMac.local (7055)] INFO : Dispatcher: thin
+[03/25/12 18:24:10 +0800 Seans-iMac.local (7055)] INFO : Application: SeanSphere
+[03/25/12 18:24:10 +0800 Seans-iMac.local (7055)] WARN : Agent configured not to send data in this environment - edit newrelic.yml to change this
+[03/25/12 18:24:10 +0800 Seans-iMac.local (7055)] INFO : New Relic Ruby Agent 3.3.2.1 Initialized: pid = 7055
+[03/25/12 18:24:10 +0800 Seans-iMac.local (7055)] INFO : Agent Log at /Users/seanlin/Ruby Projects/seansphere/log/newrelic_agent.log
+[03/25/12 18:25:36 +0800 Seans-iMac.local (7061)] INFO : Dispatcher: thin
+[03/25/12 18:25:36 +0800 Seans-iMac.local (7061)] INFO : Application: SeanSphere
+[03/25/12 18:25:36 +0800 Seans-iMac.local (7061)] WARN : Agent configured not to send data in this environment - edit newrelic.yml to change this
+[03/25/12 18:25:36 +0800 Seans-iMac.local (7061)] INFO : New Relic Ruby Agent 3.3.2.1 Initialized: pid = 7061
+[03/25/12 18:25:36 +0800 Seans-iMac.local (7061)] INFO : Agent Log at /Users/seanlin/Ruby Projects/seansphere/log/newrelic_agent.log
+[03/25/12 18:40:26 +0800 Seans-iMac.local (7073)] INFO : Dispatcher: thin
+[03/25/12 18:40:26 +0800 Seans-iMac.local (7073)] INFO : Application: SeanSphere
+[03/25/12 18:40:26 +0800 Seans-iMac.local (7073)] WARN : Agent configured not to send data in this environment - edit newrelic.yml to change this
+[03/25/12 18:40:26 +0800 Seans-iMac.local (7073)] INFO : New Relic Ruby Agent 3.3.2.1 Initialized: pid = 7073
+[03/25/12 18:40:26 +0800 Seans-iMac.local (7073)] INFO : Agent Log at /Users/seanlin/Ruby Projects/seansphere/log/newrelic_agent.log
