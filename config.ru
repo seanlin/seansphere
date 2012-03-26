@@ -6,13 +6,6 @@ require 'newrelic_rpm'
 
 # Rack config
 
-require 'new_relic/agent/instrumentation/rack'
-  
-module Toto
-  class Server
-    include NewRelic::Agent::Instrumentation::Rack
-  end
-end
 
 use Rack::Static, :urls => ['/css', '/js', '/images', '/favicon.ico'], :root => 'public'
 use Rack::CommonLogger
